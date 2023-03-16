@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* 
+  Reset CSS 
+  Youtube 👉 https://www.youtube.com/watch?v=Foieq2jTajE 
+  Github  👉 https://github.com/eduardofierropro/Reset-CSS
+*/
+
+:root {
+  --negro: #393939;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+    animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.main{
+  height: 100vh;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-central {
+  width: 810px;
+  height: 455px;
+  border-radius: 12px 12px 12px 12px;
+  display: flex;
+}
+
+.contenedor-categoria {
+    width: 270px;
+    min-height: 455px;
+    padding: 2.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cat-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 12px 0 0 12px;
+}
+
+.cat-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.cat-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 12px 12px 0;
+}
+
+h2{
+  color: white;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.boton{
+  text-align: center;
+  background-color: white;
+  width: 135px;
+  height: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span{
+  display: block;
+}
+
+.btn-1{
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2{
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3{
+  color: hsl(179, 100%, 13%);
+}
+
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5em;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width:376px) {
+.main{
+  height: 1420px;
+  margin-top: 2em;
+}
+
+.contenedor-central{
+  flex-direction: column;
+  width: 270px;
+  height: 1420px;
+  margin-top: 2em;
+}
+
+
+
+.cat-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 12px 12px 0 0;
+}
+
+.cat-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.cat-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 12px 12px;
+}
+}
